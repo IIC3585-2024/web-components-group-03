@@ -12,12 +12,12 @@
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-
 }
 
 img {
     width: 100%;
     height: auto;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -28,5 +28,12 @@ h2 {
 
 p {
     font-size: 1em;
+    margin: 0 10px;
+}
+
+#price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(0, 102, 255);
     margin: 0;
 }
