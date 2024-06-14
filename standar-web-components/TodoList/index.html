@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>To Do List Web Component</title>
+</head>
+    <body>
+        <template id="todo-list-template">
+            <link rel="stylesheet" href="./styles/todo-list-style.css">
+            <div class="todo-container">
+                <h1></h1>
+                <ul class="todo-items"></ul>
+                <div class="todo-input">
+                    <input type="text">
+                    <button>+</button>
+                </div>
+            </div>
+        </template>
+        <h1>To Do List Web Component</h1>
+        <div class="todo-lists">
+            <todo-list title="Lista de quehaceres" item1="primera" item2="segunda" item3="tercera" prompt="Agregar nuevo elemento de lista"></todo-list>
+
+            <todo-list title="To Do List" item1="first" item2="second" item3="third" prompt="Add new list item"></todo-list>
+
+            <todo-list title="やることリスト" item1="一つ目" item2="二つ目" item3="三つ目" prompt="新しいリスト項目を追加する"></todo-list>
+
+            <todo-list title="Liste de choses à faire" item1="première" item2="deuxième" item3="troisième" prompt="Ajouter un nouvel élément"></todo-list>
+
+            <todo-list title="Aufgabenliste" item1="erste" item2="zweite" item3="dritte" prompt="Neues Listenelement hinzufügen"></todo-list>
+
+            <todo-list title="待办事项列表" item1="第一" item2="第二" item3="第三" prompt="添加新列表项"></todo-list>
+        </div>
+
+    <script src="./TodoList.js"></script>
+    </body>
+</html>

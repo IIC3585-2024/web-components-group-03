@@ -1,0 +1,17 @@
+body {
+    margin: 50px;
+    font-family: Arial, sans-serif;
+    background-color: #071e37;
+    color: white;
+}
+
+.todo-lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    position: absolute;
+    bottom: 0;
+    margin: 50px;
+}
