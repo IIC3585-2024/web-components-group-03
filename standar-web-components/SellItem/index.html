@@ -3,30 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/page-styles.css">
+    <link rel="stylesheet" href="../../styles/SellItem/page-styles.css">
     <title>Web Components</title>
 </head>
-    <body>
-        <template id="sell-item-template">
-            <div class="item">
-                <link rel="stylesheet" href="./styles/sell-item-styles.css">
-                <img />
-                <h2></h2>
-                <p id="description"></p>
-                <p id="stars"></p>
-                <p id="price"></p>
-                <s></s>
-            </div>
-        </template>
-    <h2>Mire nuestros increibles productos!</h2>
+<body>
+    <template id="sell-item-template">
+        <div class="item">
+            <link rel="stylesheet" href="../../styles/SellItem/sell-item-styles.css">
+            <img src="../../imgs/No-Image-Placeholder.svg.png"/>
+            <h2></h2>
+            <p id="description"></p>
+            <p id="stars"></p>
+            <p id="price"></p>
+            <s></s>
+            <button class="delete-button">Eliminar</button>
+        </div>
+    </template>
+
+    <h2>Mire nuestros increíbles productos!</h2>
     <div class="items">
         <sell-item name="Perfume" description="Buy now!!!" price="34.990" original-price="54.990" stars="4.4" image="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSsp4X9qfz006BHlUfzTB1kxhExakLPKweDfS2dGfZ3vzpux2e3v2hqs6-qLIDTA74udPPuHUJ9Br6SjAYY3cu5ocGEL8Tc0A3s9KlN5e0ai2JC4JB9O5kGKinOQ1x8ZMxqXOq6xQ&usqp=CAc">
         </sell-item>
 
         <sell-item name="Sombrero" description="Mira que sombrero más bonito" price="23.790" original-price="33.690" stars="4.7" image="https://sombrerosdelpiano.cl/wp-content/uploads/2022/02/SHFL-46.jpg">
         </sell-item>
+
+        <sell-item name="Parca Columbia" description="Muy cómoda y agradable" price="76.870" original-price="101.500" stars="4.9" image="https://columbiacl.vtexassets.com/arquivos/ids/361582/1698001_UWP_1.jpg?v=638479251927170000">
+        </sell-item>
+    </div>
+
+    <!-- Formulario para agregar nuevos productos -->
+    <h2>Agregar nuevo producto</h2>
+    <div class="form-container">
+        <h2>Agregar Nuevo Producto</h2>
+        <form id="add-product-form">
+            <label for="product-name">*Nombre:</label>
+            <input type="text" id="product-name" name="product-name" required>
+
+            <label for="product-description">*Descripción:</label>
+            <input type="text" id="product-description" name="product-description" required>
+
+            <label for="product-price">*Precio Actual:</label>
+            <input type="number" id="product-price" name="product-price" required>
+
+            <label for="product-stars">*Estrellas:</label>
+            <input type="number" step="0.1" id="product-stars" name="product-stars" required>
+
+            <label for="product-original-price">Precio Sin Descuento:</label>
+            <input type="number" id="product-original-price" name="product-original-price">
+
+            <label for="product-image">URL de Imagen:</label>
+            <input type="url" id="product-image" name="product-image">
+
+            <button type="submit">Agregar Producto</button>
+        </form>
     </div>
 
     <script src="./SellItem.js"></script>
-    </body>
+    <script src="./Form.js"></script>
+</body>
 </html>

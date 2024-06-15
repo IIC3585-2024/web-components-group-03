@@ -4,6 +4,9 @@ class SellItem extends HTMLElement {
         const shadowRoot = this.attachShadow({ mode: 'open' });
         const templateContent = document.getElementById('sell-item-template').content.cloneNode(true);
         shadowRoot.appendChild(templateContent);
+        shadowRoot.querySelector('.delete-button').addEventListener('click', () => {
+            this.remove();
+        });
     }
 
     static get observedAttributes() {
