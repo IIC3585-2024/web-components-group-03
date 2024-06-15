@@ -3,13 +3,14 @@ import { html, render } from 'lit-html';
 // Ver cómo modularizar
 const sellItemTemplate = ({ name, price, originalPrice, stars, image }) => html`
   <div class="item">
-    <link rel="stylesheet" href="../styles/sell-item-styles.css">
-    <img src=${image} alt=${name} />
-    <p id="price">$${price}</p>
-    <h2>${name}</h2>
-    <s>$${originalPrice}</s>
-    <p id="stars">${stars} ★</p>
-    <slot></slot>
+      <link rel="stylesheet" href="../../styles/SellItem/sell-item-styles.css">
+      <img src="../../styles/imgs/No-Image-Placeholder.svg.png"/>
+      <h2></h2>
+      <p id="description"></p>
+      <p id="stars"></p>
+      <p id="price"></p>
+      <s></s>
+      <button class="delete-button">Eliminar</button>
   </div>
 `;
 
