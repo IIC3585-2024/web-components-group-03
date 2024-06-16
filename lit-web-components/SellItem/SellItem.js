@@ -24,7 +24,7 @@ class SellItem extends LitElement {
         return html`
             <link rel="stylesheet" href="../../styles/SellItem/sell-item-styles.css">
             <div class="item">
-                <img src="${this.image || '../../styles/imgs/No-Image-Placeholder.svg.png'}" alt="${this.name}">
+                <img src="${this.image ? this.image : '../../styles/imgs/No-Image-Placeholder.svg.png'}" alt="${this.name}">
                 <h2>${this.name}</h2>
                 <p id="description">${this.description}</p>
                 <p id="stars">${this.stars} ★</p>
