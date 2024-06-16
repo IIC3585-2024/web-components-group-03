@@ -4,3 +4,8 @@
 - Benjamin Gonzalez
 - Alejandro Plaza
 - Juan Pablo Vergara Lobos
+
+## Como correr
+En root
+`npm i`
+`npm run start`
