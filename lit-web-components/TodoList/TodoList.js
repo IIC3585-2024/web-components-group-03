@@ -35,7 +35,9 @@ class TodoList extends LitElement {
 
       connectedCallback() {
         super.connectedCallback();
-        this.items.push(this.item1, this.item2, this.item3);
+        if (this.item1) this.items.push(this.item1);
+        if (this.item2) this.items.push(this.item2);
+        if (this.item3) this.items.push(this.item3);
       }
 
       render() {
